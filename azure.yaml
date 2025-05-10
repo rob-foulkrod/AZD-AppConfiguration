@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: tdd-azd-appconfiguration
+metadata:
+  template: tdd-azd-appconfiguration@0.0.1-beta
+infra:
+   provider: bicep
+services:
+  function:
+    project: ./function
+    language: dotnet
+    host: function
